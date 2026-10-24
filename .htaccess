@@ -1,0 +1,12 @@
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(live|movie|series)/([^/]+)/([^/]+)/(\d+)(\.[A-Za-z0-9]+)?$ stream.php?type=$1&u=$2&p=$3&id=$4 [L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/([^/]+)/(\d+)(\.(ts|m3u8))?$ stream.php?type=live&u=$1&p=$2&id=$3 [L,QSA]
+<FilesMatch "\.(sqlite|sqlite-wal|sqlite-shm|db|log|sh|md)$">
+  Require all denied
+</FilesMatch>
