@@ -1,4 +1,4 @@
- # Xtream Panel
+# <img src="https://github.com/robinkutzner/xtream-panel/blob/0eb877467f9bb8218d8073f1bb5d0a21df91a9b0/logos/XTREAM-Server_Logo_x256.png" height="22" width="22"> Xtream Panel
 
  Ein übersichtliches Web-Panel zur Verwaltung und Organisation von **autorisierten** IPTV- bzw. Streaming-Diensten.
 
